@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Actor&family=Archivo+Narrow:wght@400;700&family=Oleo+Script:wght@700&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,65 +13,94 @@
     <title>Portifólio de Rayson Mendes</title>
 </head>
 <body>
-    <nav><ul>
-        <li>Inicio</li>
-        <li>Habilidades</li>
-        <li>Habilidades Futuras</li>
-        <li>Projetos</li>
-        <li>Contato</li>
+    <nav>
+        <ul>
+            <li><a href="#sectInicio"> Inicio</a></li>
+            <li><a href="#sectHabilidades">Habilidades</a></li>
+            <li><a href="#sectHabilidadesFuturas">Habilidades Futuras</a></li>
+            <li><a href="#sectProjetos">Projetos</a></li>
+            <li><a href="#sectContato">Contato</a></li>
     </ul></nav>
-    <div>
-        <div><img src="" alt=""></div>
-        <div>
-            <div>Rayson Nascimento Mendes.</div>
-            <div>Desenvolvedor Fornt-End</div>
-            <div>Bacharel em Sistemas de Informação</div>
+    <div id="divInicio">
+        <section id="sectInicio">            
+            <img id="imgPerfil" src="./assets/imagem-de-perfil.png" alt="Imagem de perfil de Rayson">            
             <div>
-                <img src="/assets/🦆 icon _whatsapp_.svg" alt="Botão de whatsapp. Clique para entrar em contato via whatsapp">
-                <img src="/assets/🦆 icon _linkedin2_.svg" alt="Botão do linkedin. Clique para entrar em contato via linkedin">
-                <img src="/assets/🦆 icon _github_.svg" alt="Botão do Github. Clique para visualizar meu github">
+                <h1>Rayson Nascimento Mendes.</h1>
+                <h2 id="cargo">Desenvolvedor Fornt-End</h2>
+                <h2 id="formacao">Bacharel em Sistemas de Informação</h2>
+                <div id="social">
+                    <a href="https://wa.me/5593996543213" target="_blank">
+                        <img src="./assets/🦆 icon _whatsapp_.svg" alt="Botão de whatsapp. Clique para entrar em contato via whatsapp" width="40" id="whatsapp" onmouseover="this.src='./assets/🦆 icon _whatsapp_ 2.svg' " onmouseout="this.src='./assets/🦆 icon _whatsapp_.svg'">
+                    </a>
+                    <a href="https://www.linkedin.com/in/rayson-mendes/" target="_blank">
+                        <img src="./assets/🦆 icon _linkedin_.svg" alt="Botão do linkedin. Clique para entrar em contato via linkedin" width="40" id="linkedin" onmouseover="this.src='./assets/🦆 icon _linkedin_ 2.svg' " onmouseout="this.src='./assets/🦆 icon _linkedin_.svg'">
+                    </a>
+                    <a href="https://github.com/raysonmendes" target="_blank">
+                        <img src="./assets/🦆 icon _github_.svg" alt="Botão do Github. Clique para visualizar meu github" width="40" id="github" onmouseover="this.src='./assets/🦆 icon _github_ 2.svg' " onmouseout="this.src='./assets/🦆 icon _github_.svg'">
+                    </a>
+                    
+                </div>
             </div>
-        </div>
+    </section>
     </div>
     <div>
         <section id="sectHabilidades">
             <label for="sectHabilidades">Habilidades e Tecnologias</label>
-            <img src="/assets/javascript.svg" alt="Icone do Javascript">
-            <img src="/assets/html.svg" alt="Icone do HTML5">
-            <img src="/assets/css.svg" alt="Icone do CSS">
+            <div id="habilidades">
+            <img src="./assets/javascript.svg" alt="Icone do Javascript" width="200">
+            <img src="./assets/html.svg" alt="Icone do HTML5" width="200">
+            <img src="./assets/css.svg" alt="Icone do CSS" width="200">
+        </div>
         </section>
     </div>
     <div>
         <section id="sectHabilidadesFuturas">
             <label for="sectHabilidadesFuturas">Habilidades e Tecnologias Futuras</label>
-            <img src="/assets/typescript.svg" alt="Icone do TypeScript">
-            <img src="/assets/React-icon.svg.png" alt="Icone do React">
-            <img src="/assets/Nextjs-logo.svg" alt="Icone do Next Js">
+            <div id="habilidadesFuturas">
+                <img src="./assets/typescript.svg" alt="Icone do TypeScript" width="250">
+                <img src="./assets/React-icon.svg.png" alt="Icone do React" width="250">
+                <img src="./assets/Nextjs-logo.svg" alt="Icone do Next Js" width="250">
+            </div>
         </section>
     </div>
     <div>
         <section id="sectProjetos">
             <label for="sectProjetos">Projetos</label>
-            <img src="" alt="Imagem do projeto STI">
-            <img src="" alt="Imagem do #boraCodar">
-            <img src="" alt="Em breve">
+            <div id="projetos">
+                <a href="https://santaremti.vercel.app/" target="_blank">
+                    <section>
+                        <label for="">STI</label>
+                        <img src="./assets/projeto-sti.png" alt="Imagem do projeto STI" height="250">
+                    </section>
+                </a>
+                <a href="https://github.com/raysonmendes/boraCodar" target="_blank">
+                    <section>
+                        <label for="">#boraCodar</label>
+                        <img src="./assets/boraCodar-01.png" alt="Imagem do #boraCodar" height="250">
+                    </section>
+                </a>
+                
+                
+            </div>
         </section>
     </div>
     <div>
         <section id="sectContato">
             <label for="sectContato">Contato</label>
-            <a href="#">
-                <img src="/assets/🦆 icon _whatsapp_.svg" alt="Botão de whatsapp. Clique para entrar em contato via whatsapp">
-                <p>+55 93 99654-3213</p>
-            </a>
-            <a href="#">
-                <img src="/assets/🦆 icon _linkedin2_.svg" alt="Botão do linkedin. Clique para entrar em contato via linkedin">
-                <p>linkedin.com/in/rayson-mendes</p>
-            </a>
-            <a href="#">
-                <img src="/assets/🦆 icon _github_.svg" alt="Botão do Github. Clique para visualizar meu github">
-                <p>github.com/raysonmendes</p>
-            </a>
+            <div id="contato">
+                <a href="https://wa.me/5593996543213" target="_blank">
+                    <img src="./assets/🦆 icon _whatsapp_.svg" alt="Botão de whatsapp. Clique para entrar em contato via whatsapp" width="40" id="whatsapp" onmouseover="this.src='./assets/🦆 icon _whatsapp_ 2.svg' " onmouseout="this.src='./assets/🦆 icon _whatsapp_.svg'">
+                    <p>+55 93 99654-3213</p>
+                </a>
+                <a href="https://www.linkedin.com/in/rayson-mendes/" target="_blank">
+                    <img src="./assets/🦆 icon _linkedin_.svg" alt="Botão do linkedin. Clique para entrar em contato via linkedin" width="40" id="linkedin" onmouseover="this.src='./assets/🦆 icon _linkedin_ 2.svg' " onmouseout="this.src='./assets/🦆 icon _linkedin_.svg'">
+                    <p>linkedin.com/in/rayson-mendes</p>
+                </a>
+                <a href="https://github.com/raysonmendes" target="_blank">
+                    <img src="./assets/🦆 icon _github_.svg" alt="Botão do Github. Clique para visualizar meu github" width="40" id="github" onmouseover="this.src='./assets/🦆 icon _github_ 2.svg' " onmouseout="this.src='./assets/🦆 icon _github_.svg'">
+                    <p>github.com/raysonmendes</p>
+                </a>                
+        </div>
         </section>
     </div>
 </body>
