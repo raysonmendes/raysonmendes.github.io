@@ -1,171 +1,261 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: #0D0D0D;
-    background-image: url(./assets/batman.svg);
-    background-size:635px;
-    background-repeat: no-repeat;
-    background-position:0px 240px;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+  background-color: #0d0d0d;
+  background-image: url(./assets/batman-7503733.svg);
+  background-size: 130vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 body * {
-    color: #f2f2f2;
-    font-family: 'Archivo Narrow';
-    position: relative;
+  color: #f2f2f2;
+  font-family: "Archivo Narrow";
+  position: relative;
 }
 
-a{
-    text-decoration: none;
-    color: #f2f2f2;
+a {
+  text-decoration: none;
+  color: #f2f2f2;
+}
+a:active {
+  transform: scale(0.95);
 }
 ul {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-list-style: none;
-background-color: #262626;
-border-radius: 10px;
-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  list-style: none;
+  background-color: #262626;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.25);
 }
 li {
-    font-family: 'Actor';
-    font-size: 24px;
+  font-family: "Actor";
+  font-size: 24px;
 }
 nav {
-    display: flex;
-    width: 1200px;
-    height: 60px;
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    animation-duration: 0.3ms;
-    
+  display: flex;
+  width: 1200px;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  animation-duration: 0.3ms;
 }
 section {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    width: 1200px;
-    height: 600px;
+  width: 1200px;
+  height: fit-content;
 
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 
-    gap: 44px;
+  gap: 44px;
 
-    overflow: hidden;
+  overflow: hidden;
 }
 div {
-    display: flex;
+  display: flex;
+  height: 100vh;
+
+  justify-content: center;
+  align-items: center;
+}
+section div {
+  height: fit-content;
 }
 
 label {
-    font-family: 'Archivo Narrow';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 120%;
+  font-family: "Archivo Narrow";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 120%;
 }
 
-#divInicio{
-    margin-top: 120px;
+#habilidades img,
+#habilidadesFuturas img {
+  background-color: #2f3237;
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  border-radius: 50px;
+  object-fit: contain;
 }
+
 #sectInicio {
-    flex-direction: row;
-    gap: 18px;
-    
+  flex-direction: column;
+  gap: 18px;
 }
 #sectInicio > div {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 #imgPerfil {
-    width: 300px;
-    height: 300px;
-    border-radius: 50px;
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
 }
 
 #sectInicio h1 {
-    font-family: 'Oleo Script';
-    font-size: 50px;
-    line-height: 69px;
+  font-family: "Oleo Script";
+  font-size: 50px;
+  line-height: 69px;
 }
 #cargo {
-    font-family: 'Archivo Narrow';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 43px;
+  font-family: "Archivo Narrow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 43px;
 }
 #formacao {
-    font-family: 'Archivo Narrow';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 27px;
+  font-family: "Archivo Narrow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
 }
-#social {    
-    flex-direction: row;
-    align-items: center;  
-    gap: 24px;
-    
+#social {
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
 }
 
+.habilidade {
+  background-color: #2f3237;
+  padding: 16px;
+  border-radius: 20px;
+}
+.color-1,
+.color-4 {
+  fill: #0d0d0d;
+}
+.color-2 {
+  fill: #161b22;
+}
+.color-3 {
+  fill: #262626;
+}
+.color-5 {
+  fill: #2f3237;
+}
+.habilidade:hover {
+  background-color: #fff;
+}
+.habilidade:hover .color-3 {
+  fill: #ebebeb;
+}
+.habilidade:hover .color-4 {
+  fill: #000;
+}
+.habilidade:hover .color-5 {
+  fill: #fff;
+}
+.habilidade-html:hover .color-1 {
+  fill: #e44d26;
+}
+.habilidade-html:hover .color-2 {
+  fill: #f16529;
+}
+.habilidade-css:hover .color-1 {
+  fill: #264de4;
+}
+.habilidade-css:hover .color-2 {
+  fill: #2965f1;
+}
+.habilidade-js:hover .color-1 {
+  fill: #e6a329;
+}
+.habilidade-js:hover .color-2 {
+  fill: #f1bf22;
+}
 #habilidades {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    gap: 140px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 140px;
 }
 
 #habilidadesFuturas {
-    display: flex;
-    justify-content: center;
-    gap: 140px;
-    width: 100%;
-}
-
-#sectProjetos img {
-    /* object-fit: cover; */
+  display: flex;
+  justify-content: center;
+  gap: 140px;
+  width: 100%;
 }
 
 #projetos {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    gap: 140px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 140px;
 }
 a > section {
-    width: fit-content;  
-    height: fit-content;
+  width: fit-content;
+  height: fit-content;
 }
 
 #sectContato {
-    height: fit-content;
-    gap: 10px;
-    padding: 12px;
+  height: fit-content;
+  gap: 10px;
+  padding: 12px;
 }
 
 #sectContato a {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
 #contato {
-    flex-direction: row;
-    gap: 15px;
+  flex-direction: row;
+  gap: 15px;
+}
+
+#aWhatsapp,
+#aLinkedin,
+#aGithub {
+  padding: 10px;
+  border-radius: 10px;
+  color: #f2f2f2;
+}
+
+#aWhatsapp:hover,
+#aWhatsapp:hover path {
+  background-color: #00a884;
+  fill: #ffffff;
+  color: #ffffff;
+}
+
+#aLinkedin:hover,
+#aLinkedin:hover path {
+  background-color: #0a66c2;
+  fill: #ffffff;
+  color: #ffffff;
+}
+
+#aGithub:hover,
+#aGithub:hover path {
+  background-color: #161b22;
+  fill: #ffffff;
+  color: #ffffff;
 }
