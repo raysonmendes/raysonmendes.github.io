@@ -162,10 +162,13 @@ label {
   gap: 24px;
 }
 
-.habilidade {
+.habilidade,
+.habilidadeFutura {
   background-color: #2f3237;
   padding: 16px;
   border-radius: 20px;
+
+  transition-duration: 2s;
 }
 .color-1,
 .color-4 {
@@ -180,7 +183,8 @@ label {
 .color-5 {
   fill: #2f3237;
 }
-.habilidade:hover {
+.habilidade:hover,
+.habilidadeFutura:hover {
   background-color: #fff;
 }
 .habilidade:hover .color-3 {
@@ -222,6 +226,31 @@ label {
   justify-content: center;
   gap: 140px;
   width: 100%;
+}
+.habilidadeFutura {
+  width: fit-content;
+  height: 232px;
+  overflow: hidden;
+}
+.habilidadeFutura svg {
+  width: auto;
+  height: 200px;
+}
+.habilidadeFutura svg path,
+.habilidadeFutura svg circle,
+.habilidade-nextjs svg polygon {
+  fill: #0d0d0d;
+}
+.habilidade-ts:hover svg path {
+  fill: #2f74c0;
+}
+.habilidade-react:hover svg path,
+.habilidade-react:hover svg circle {
+  fill: #61dafb;
+}
+.habilidade-nextjs:hover svg path,
+.habilidade-nextjs:hover svg polygon {
+  fill: #000000;
 }
 
 #projetos {
