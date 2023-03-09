@@ -48,6 +48,28 @@ li {
   font-family: "Actor";
   font-size: 24px;
 }
+li:hover {
+  background-color: #2f3237;
+  border: #161b22 0.0625rem solid;
+}
+li:active {
+  border-bottom: #161b22 0.0625rem solid;
+  border-top: #161b22 0.0625rem solid;
+}
+
+ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 1rem;
+
+  background-image: url(./assets/batman-7503733.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border-bottom: #0d0d0d 0.0625rem solid;
+  border-radius: 0.625rem;
+}
 nav {
   display: flex;
   width: 1200px;
