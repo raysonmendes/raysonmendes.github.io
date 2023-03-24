@@ -30,7 +30,7 @@
         </ul>
     </nav>
     <div id="divInicio">
-        <section id="sectInicio">
+        <section id="sectInicio" class="section">
             <img id="imgPerfil" src="./assets/imagem-de-perfil.png" alt="Imagem de perfil de Rayson">
             <div>
                 <h1>Rayson Nascimento Mendes.</h1>
@@ -57,9 +57,9 @@
         </section>
     </div>
     <div id="divHabilidades">
-        <section id="sectHabilidades">
+        <section id="sectHabilidades" class="section">
             <label for="sectHabilidades">Habilidades e Tecnologias</label>
-            <div id="habilidades">
+            <div class="habilidades">
                 <span class="habilidade habilidade-html">
                     <img src="./assets/tec-html.svg" class="html" alt="Icone do HTML5" onload="fetchSvg(this)"
                         height="200">
@@ -75,9 +75,9 @@
         </section>
     </div>
     <div id="divHabilidadesFuturas">
-        <section id="sectHabilidadesFuturas">
+        <section id="sectHabilidadesFuturas" class="section">
             <label for="sectHabilidadesFuturas">Habilidades e Tecnologias Futuras</label>
-            <div id="habilidadesFuturas">
+            <div class="habilidadesFuturas">
                 <span class="habilidadeFutura habilidade-ts">
                     <img src="./assets/tec-typescript.svg" alt="Icone do TypeScript" onload="fetchSvg(this)">
                 </span>
@@ -91,9 +91,9 @@
         </section>
     </div>
     <div id="divProjetos">
-        <section id="sectProjetos">
+        <section id="sectProjetos" class="section">
             <label for="sectProjetos">Projetos</label>
-            <div id="projetos">
+            <div class="projetos">
                 <a href="https://santaremti.vercel.app/" target="_blank">
                     <section>
                         <label for="">STI</label>
@@ -112,9 +112,9 @@
         </section>
     </div>
     <div id="divContato">
-        <section id="sectContato">
+        <section id="sectContato" class="section">
             <label for="sectContato">Contato</label>
-            <div id="contato">
+            <div class="contato">
                 <a href="https://wa.me/5593996543213" target="_blank" id="aWhatsapp">
                     <img src="./assets/social-whatsapp.svg"
                         alt="Botão de whatsapp. Clique para entrar em contato via whatsapp" width="40" id="whatsapp"
@@ -135,6 +135,27 @@
             </div>
         </section>
     </div>
+    <script>
+        const observer = new IntersectionObserver(entriers => {
+            console.log("Está sendo Observado!", entriers);
+
+            Array.from(entriers).forEach(entry => {
+                if (entry.intersectionRatio >= .51 & entry.intersectionRatio <= 1) {
+                    entry.target.classList.add('active');
+                    console.log("Adicionei a Classe")
+                } else {
+                    entry.target.classList.remove('active');
+                    console.log("Removi a Classe")
+                }
+            })
+        }, {
+            threshold: 0.51
+        })
+
+        Array.from(document.querySelectorAll('.section')).forEach(element => {
+            observer.observe(element)
+        })
+    </script>
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 const fetchSvg = (image) => {
-  console.log("Função fetchSvg rodou aqui!");
+  // console.log("Função fetchSvg rodou aqui!");
   fetch(image.src)
     .then((response) => response.text())
     .then((response) => {
