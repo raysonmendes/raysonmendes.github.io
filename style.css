@@ -33,7 +33,6 @@ body * {
   color: var(--text-color);
   font-family: "Archivo Narrow";
   position: relative;
-  transition: 3s;
 }
 
 a {
@@ -65,7 +64,7 @@ li:hover {
   transform: scale(1.05);
   box-shadow: 0px 0px 22px rgba(13, 13, 13, 1);
 }
-ul .active {
+ul li:active {
   border-bottom: #000 0.15625rem solid;
 }
 
@@ -97,7 +96,7 @@ section {
 
   /* gap: 44px; */
 
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 div {
   display: flex;
@@ -191,33 +190,43 @@ label {
 .active .habilidade,
 .active .habilidadeFutura {
   background-color: #fff;
+  transition: 3s;
 }
 .active .habilidade .color-3 {
   fill: #ebebeb;
+  transition: 3s;
 }
 .active .habilidade .color-4 {
   fill: #000;
+  transition: 3s;
 }
 .active .habilidade .color-5 {
   fill: #fff;
+  transition: 3s;
 }
 .active .habilidade-html .color-1 {
   fill: #e44d26;
+  transition: 3s;
 }
 .active .habilidade-html .color-2 {
   fill: #f16529;
+  transition: 3s;
 }
 .active .habilidade-css .color-1 {
   fill: #264de4;
+  transition: 3s;
 }
 .active .habilidade-css .color-2 {
   fill: #2965f1;
+  transition: 3s;
 }
 .active .habilidade-js .color-1 {
   fill: #e6a329;
+  transition: 3s;
 }
 .active .habilidade-js .color-2 {
   fill: #f1bf22;
+  transition: 3s;
 }
 
 #sectHabilidades,
@@ -231,12 +240,12 @@ label {
 
 .habilidades {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .habilidadesFuturas {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 100%;
 }
 .habilidadeFutura {
@@ -255,14 +264,17 @@ label {
 }
 .active .habilidade-ts svg path {
   fill: #2f74c0;
+  transition: 3s;
 }
 .active .habilidade-react svg path,
 .active .habilidade-react svg circle {
   fill: #61dafb;
+  transition: 3s;
 }
 .active .habilidade-nextjs svg path,
 .active .habilidade-nextjs svg polygon {
   fill: #000000;
+  transition: 3s;
 }
 
 .projetos {
@@ -307,6 +319,7 @@ a > section {
   background-color: #00a884;
   fill: #ffffff;
   color: #ffffff;
+  transition: 3s;
 }
 
 .active #aLinkedin,
@@ -314,6 +327,7 @@ a > section {
   background-color: #0a66c2;
   fill: #ffffff;
   color: #ffffff;
+  transition: 3s;
 }
 
 .active #aGithub,
@@ -321,4 +335,12 @@ a > section {
   background-color: #161b22;
   fill: #ffffff;
   color: #ffffff;
+  transition: 3s;
+}
+#aGithub:hover,
+#aLinkedin:hover,
+#aWhatsapp:hover {
+  transform: scale(1.2);
+  transition: 50ms;
+  z-index: 10;
 }
