@@ -140,7 +140,8 @@ label {
 #imgPerfil {
   width: 300px;
   height: 300px;
-  border-radius: 10px;
+  border-radius: 50px;
+  box-shadow: 0px 0px 5px 5px rgba(242, 242, 242, 0.25);
 }
 
 #sectInicio h1 {
