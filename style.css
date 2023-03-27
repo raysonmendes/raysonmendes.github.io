@@ -95,7 +95,7 @@ section {
   align-items: center;
 
   /* gap: 44px; */
-
+  flex-wrap: wrap;
   /* overflow: hidden; */
 }
 div {
@@ -140,7 +140,7 @@ label {
 #imgPerfil {
   width: 300px;
   height: 300px;
-  border-radius: 100%;
+  border-radius: 10px;
 }
 
 #sectInicio h1 {
@@ -251,7 +251,7 @@ label {
 .habilidadeFutura {
   width: fit-content;
   height: 232px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .habilidadeFutura svg {
   width: auto;
@@ -280,8 +280,9 @@ label {
 .projetos {
   display: flex;
   width: 100%;
-  justify-content: center;
-  gap: 140px;
+  justify-content: space-evenly;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 a > section {
   width: fit-content;
