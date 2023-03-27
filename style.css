@@ -5,6 +5,8 @@
   --text-color: #f2f2f2;
   --link-active-color: #161b22;
   --width-desktop: min(1200px, 90%);
+  --height-habilidades-projetos: 232px;
+  --height-svg: 200px;
 }
 * {
   margin: 0;
@@ -121,8 +123,6 @@ label {
 .habilidades img,
 .habilidadesFuturas img {
   background-color: #2f3237;
-  width: 200px;
-  height: 200px;
   padding: 20px;
   border-radius: 50px;
   object-fit: contain;
@@ -251,12 +251,11 @@ label {
 }
 .habilidadeFutura {
   width: fit-content;
-  height: 232px;
-  /* overflow: hidden; */
+  height: var(--height-habilidades-projetos);
 }
 .habilidadeFutura svg {
   width: auto;
-  height: 200px;
+  height: var(--height-svg);
 }
 .habilidadeFutura svg path,
 .habilidadeFutura svg circle,
@@ -345,4 +344,61 @@ a > section {
   transform: scale(1.2);
   transition: 50ms;
   z-index: 10;
+}
+
+@media (max-width: 941px) {
+  :root {
+    --width-desktop: 95%;
+    --height-habilidades-projetos: auto;
+  }
+  nav li {
+    display: none;
+  }
+  div {
+    height: 75vh;
+    align-items: start;
+  }
+  label {
+    font-size: 1.9rem;
+    line-height: 1.9rem;
+    text-align: center;
+  }
+
+  #divInicio {
+    align-items: center;
+  }
+  #imgPerfil {
+    width: 50%;
+    height: auto;
+    border-radius: 100%;
+  }
+  #sectInicio h1 {
+    font-size: 1.9rem;
+    line-height: 2.5rem;
+  }
+  #cargo {
+    font-size: 1.75rem;
+    line-height: 2.375rem;
+  }
+  #formacao {
+    font-size: 1.125rem;
+    line-height: 1.125rem;
+  }
+  #aWhatsapp svg,
+  #aLinkedin svg,
+  #aGithub svg {
+    width: 1.875rem;
+    height: 1.875rem;
+  }
+
+  .habilidades,
+  .habilidadesFuturas {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .habilidades svg,
+  .habilidadesFuturas svg {
+    height: 6.25rem;
+    width: fit-content;
+  }
 }
