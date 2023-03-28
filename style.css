@@ -156,15 +156,18 @@ label {
   font-weight: 400;
   font-size: 32px;
   line-height: 43px;
+  color: #f2f2f278;
 }
-#formacao {
+#linkCurriculo {
   font-family: "Archivo Narrow";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 27px;
+  color: #f2f2f278;
 }
 #social {
+  margin-top: 1rem;
   flex-direction: row;
   align-items: center;
   gap: 24px;
@@ -342,8 +345,8 @@ a > section {
 #aGithub:hover,
 #aLinkedin:hover,
 #aWhatsapp:hover {
-  transform: scale(1.2);
-  transition: 50ms;
+  transition: 50ms scale(1.2);
+
   z-index: 10;
 }
 
@@ -363,6 +366,11 @@ a > section {
     font-size: 1.9rem;
     line-height: 1.9rem;
     text-align: center;
+  }
+  #aGithub:hover,
+  #aLinkedin:hover,
+  #aWhatsapp:hover {
+    transform: none;
   }
   #divInicio,
   #divHabilidades,
@@ -388,21 +396,25 @@ a > section {
     align-items: center;
   }
   #imgPerfil {
-    width: 50%;
-    height: auto;
-    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
   }
   #sectInicio h1 {
-    font-size: 1.9rem;
-    line-height: 2.5rem;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
   }
   #cargo {
-    font-size: 1.75rem;
-    line-height: 2.375rem;
+    font-size: 1.5rem;
+    line-height: 100%;
   }
-  #formacao {
-    font-size: 1.125rem;
-    line-height: 1.125rem;
+  #linkCurriculo {
+    font-size: 1rem;
+    line-height: 100%;
+  }
+  #social {
+    margin-top: 1rem;
+    gap: 1rem;
   }
   #aWhatsapp svg,
   #aLinkedin svg,
