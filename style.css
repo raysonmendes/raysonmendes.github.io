@@ -34,6 +34,7 @@ body {
 body * {
   color: var(--text-color);
   font-family: "Archivo Narrow";
+  text-align: center;
   position: relative;
 }
 
@@ -355,13 +356,26 @@ a > section {
     display: none;
   }
   div {
-    height: 75vh;
+    height: auto;
     align-items: start;
   }
   label {
     font-size: 1.9rem;
     line-height: 1.9rem;
     text-align: center;
+  }
+  #divInicio,
+  #divHabilidades,
+  #divHabilidadesFuturas,
+  #divProjetos,
+  #divContato {
+    margin-top: 30%;
+  }
+  #sectHabilidades,
+  #sectHabilidadesFuturas,
+  #sectProjetos,
+  #sectContato {
+    gap: 4rem;
   }
 
   #divInicio {
@@ -400,5 +414,19 @@ a > section {
   .habilidadesFuturas svg {
     height: 6.25rem;
     width: fit-content;
+  }
+
+  .projetos img {
+    width: 100%;
+    height: auto;
+  }
+
+  .contato {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  .contato a {
+    width: 100%;
   }
 }
