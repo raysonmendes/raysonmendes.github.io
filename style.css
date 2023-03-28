@@ -61,14 +61,12 @@ li {
   font-size: 1.5rem;
 }
 li:hover {
-  /* background-color: var(--secundary-color); */
   border-bottom: #000 0.125rem solid;
-  border-top: #000 0.125rem solid;
-  transform: scale(1.05);
-  box-shadow: 0px 0px 22px rgba(13, 13, 13, 1);
 }
 ul li:active {
   border-bottom: #000 0.15625rem solid;
+  transform: scale(1.05);
+  box-shadow: 0px 0px 22px rgba(13, 13, 13, 1);
 }
 
 ul li {
