@@ -324,7 +324,7 @@ a > section {
   background-color: #00a884;
   fill: #ffffff;
   color: #ffffff;
-  transition: fill color 3s;
+  transition: background-color 3s, fill 3s, color 3s;
 }
 
 .active #aLinkedin,
@@ -332,7 +332,7 @@ a > section {
   background-color: #0a66c2;
   fill: #ffffff;
   color: #ffffff;
-  transition: background-color fill color 3s;
+  transition: background-color 3s, fill 3s, color 3s;
 }
 
 .active #aGithub,
@@ -340,12 +340,12 @@ a > section {
   background-color: #161b22;
   fill: #ffffff;
   color: #ffffff;
-  transition: fill color 3s;
+  transition: background-color 3s, fill 3s, color 3s;
 }
 #aGithub:hover,
 #aLinkedin:hover,
 #aWhatsapp:hover {
-  transition: transform 50ms;
+  transition: transform 500ms;
   transform: scale(1.2);
   z-index: 10;
 }
