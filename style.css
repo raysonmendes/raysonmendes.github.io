@@ -353,12 +353,18 @@ a > section {
     --width-desktop: 95%;
     --height-habilidades-projetos: auto;
   }
-  nav li {
+  ul {
+    background-color: transparent;
+  }
+  ul li {
     display: none;
   }
+  ul .active {
+    display: flex;
+  }
   div {
-    height: auto;
-    align-items: start;
+    height: min(98vh);
+    align-items: center;
   }
   label {
     font-size: 1.9rem;
@@ -370,13 +376,13 @@ a > section {
   #aWhatsapp:hover {
     transform: none;
   }
-  #divInicio,
+  /* #divInicio,
   #divHabilidades,
   #divHabilidadesFuturas,
   #divProjetos,
   #divContato {
     padding-top: 30%;
-  }
+  } */
   #sectHabilidades,
   #sectHabilidadesFuturas,
   #sectProjetos,
