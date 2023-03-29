@@ -22,11 +22,12 @@
 <body>
     <nav>
         <ul>
-            <li><a href="#divInicio"> Inicio</a></li>
-            <li><a href="#divHabilidades">Habilidades</a></li>
-            <li><a href="#divHabilidadesFuturas">Habilidades Futuras</a></li>
-            <li><a href="#divProjetos">Projetos</a></li>
-            <li><a href="#divContato">Contato</a></li>
+            <li class="main-nav-li"><a id="aInicio" href="#divInicio"> Inicio</a></li>
+            <li class="main-nav-li"><a id="aHabilidades" href="#divHabilidades">Habilidades</a></li>
+            <li class="main-nav-li"><a id="aHabilidadesFuturas" href="#divHabilidadesFuturas">Habilidades Futuras</a>
+            </li>
+            <li class="main-nav-li"><a id="aProjetos" href="#divProjetos">Projetos</a></li>
+            <li class="main-nav-li"><a id="aContato" href="#divContato">Contato</a></li>
         </ul>
     </nav>
     <div id="divInicio">
@@ -138,26 +139,11 @@
             </div>
         </section>
     </div>
+
     <script>
-        const observer = new IntersectionObserver(entriers => {
-            console.log("Está sendo Observado!", entriers);
-
-            Array.from(entriers).forEach(entry => {
-                if (entry.intersectionRatio >= .51 & entry.intersectionRatio <= 1) {
-                    entry.target.classList.add('active');
-                    console.log("Adicionei a Classe")
-                } else {
-                    entry.target.classList.remove('active');
-                    console.log("Removi a Classe")
-                }
-            })
-        }, {
-            threshold: 0.51
-        })
-
-        Array.from(document.querySelectorAll('.section')).forEach(element => {
-            observer.observe(element)
-        })
+        Array.from(document.querySelectorAll(".section")).forEach((element) => {
+            observer.observe(element);
+        });
     </script>
 </body>
 
