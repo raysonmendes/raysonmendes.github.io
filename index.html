@@ -16,20 +16,31 @@
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="./js/manipulation-svg.js"></script>
     <script type="text/javascript" src="./js/observing-elements.js"></script>
+    <script type="text/javascript" src="./js/mobile-menu.js"></script>
     <title>Portifólio de Rayson Mendes</title>
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li class="main-nav-li"><a id="aInicio" href="#divInicio"> Inicio</a></li>
-            <li class="main-nav-li"><a id="aHabilidades" href="#divHabilidades">Habilidades</a></li>
-            <li class="main-nav-li"><a id="aHabilidadesFuturas" href="#divHabilidadesFuturas">Habilidades Futuras</a>
-            </li>
-            <li class="main-nav-li"><a id="aProjetos" href="#divProjetos">Projetos</a></li>
-            <li class="main-nav-li"><a id="aContato" href="#divContato">Contato</a></li>
-        </ul>
-    </nav>
+    <header>
+        <p>Seção em Foco</p>
+        <nav class="mainNav">
+            <ul>
+
+                <li class="main-nav-li"><a id="aInicio" href="#divInicio"> Inicio</a></li>
+                <li class="main-nav-li"><a id="aHabilidades" href="#divHabilidades">Habilidades</a></li>
+                <li class="main-nav-li"><a id="aHabilidadesFuturas" href="#divHabilidadesFuturas">Habilidades
+                        Futuras</a>
+                </li>
+                <li class="main-nav-li"><a id="aProjetos" href="#divProjetos">Projetos</a></li>
+                <li class="main-nav-li"><a id="aContato" href="#divContato">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="btnMenu" onclick=" btnMenuClick()">
+            <span id="line1"></span>
+            <span id="line2"></span>
+            <span id="line3"></span>
+        </div>
+    </header>
     <div id="divInicio">
         <section id="sectInicio" class="section">
             <img id="imgPerfil" src="./assets/imagem-de-perfil.png" alt="Imagem de perfil de Rayson">
