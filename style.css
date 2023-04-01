@@ -103,10 +103,10 @@ li {
   font-size: 1.5rem;
 }
 li:hover {
-  border-bottom: #000 0.125rem solid;
+  border-bottom: #f2f2f2 0.125rem solid;
 }
 ul .active {
-  border-bottom: #000 0.15625rem solid;
+  border-bottom: #f2f2f2 0.15625rem solid;
   transform: scale(1.05);
   box-shadow: 0px 1px 4px rgba(255, 255, 255, 0.1);
 }
@@ -140,10 +140,15 @@ section {
 div {
   display: flex;
   width: 100%;
-  /* min-height: 100vh; */
-
   justify-content: center;
   align-items: center;
+}
+#divInicio,
+#divHabilidades,
+#divHabilidadesFuturas,
+#divProjetos,
+#divContato {
+  min-height: 100vh;
 }
 section div {
   height: fit-content;
