@@ -398,7 +398,7 @@ a > section {
   }
   header p {
     display: flex;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .btnMenu {
     display: flex;
@@ -449,7 +449,7 @@ a > section {
   #divProjetos,
   #divContato {
     min-height: 98vh;
-    padding-block: 60px;
+    padding-block: 65px;
   }
   #aGithub:hover,
   #aLinkedin:hover,
