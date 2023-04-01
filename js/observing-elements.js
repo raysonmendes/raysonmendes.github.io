@@ -21,6 +21,7 @@ function enableItemLi(idDiv) {
   Array.from(document.querySelectorAll(".main-nav-li")).forEach((navLi) => {
     if (navLi.children[0].getAttribute("href") == idDiv) {
       navLi.classList.add("active");
+      addTextHeader(idDiv);
     }
   });
 }
@@ -37,3 +38,30 @@ onload = function () {
     observer.observe(element);
   });
 };
+
+function addTextHeader(idElement) {
+  if (idElement == "#divInicio") {
+    document.getElementById("textHeaderMobile").innerText = "Inicio";
+    console.log("Inicio");
+  }
+  if (idElement == "#divHabilidades") {
+    document.getElementById("textHeaderMobile").innerText = "Habilidades";
+    console.log("Habilidades");
+  }
+  if (idElement == "#divHabilidadesFuturas") {
+    document.getElementById("textHeaderMobile").innerText =
+      "Habilidades Futuras";
+    console.log("Habilidades Futuras");
+  }
+  if (idElement == "#divProjetos") {
+    document.getElementById("textHeaderMobile").innerText = "Projetos";
+    console.log("Projetos");
+  }
+  if (idElement == "#divContato") {
+    document.getElementById("textHeaderMobile").innerText = "Contato";
+    console.log("Contato");
+  }
+}
+function removeTextHeader() {
+  document.getElementById("textHeaderMobile").innerText = "";
+}
