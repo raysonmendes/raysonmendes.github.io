@@ -49,7 +49,8 @@ header {
   background-color: rgba(13, 13, 13, 0.8);
   border-radius: 10px;
   box-shadow: 0px 0px 0.3125rem 0.125rem rgba(47, 50, 55, 1);
-  backdrop-filter: blur(1rem);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 }
 header p {
   display: none;
@@ -402,7 +403,8 @@ a > section {
     top: 60px;
     background: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(16px);
-    border: rgba(255, 255, 255, 0.1) 0.15625rem solid;
+    -webkit-backdrop-filter: blur(16px);
+    border: rgba(255, 255, 255, 0.1) 2px solid;
     border-radius: 20px;
     box-shadow: 0px 1px 4px rgba(255, 255, 255, 0.1);
     transform: translateY(-200%);
@@ -430,6 +432,7 @@ a > section {
   }
 
   label {
+    display: none;
     font-size: 1.9rem;
     line-height: 1.9rem;
     text-align: center;
