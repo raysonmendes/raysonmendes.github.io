@@ -3,7 +3,7 @@
 const observer = new IntersectionObserver(
   (entriers) => {
     Array.from(entriers).forEach((entry) => {
-      if (entry.intersectionRatio >= 0.7) {
+      if (entry.intersectionRatio >= 0.51) {
         entry.target.classList.add("active");
         enableItemLi("#" + entry.target.parentElement.id);
       } else {
@@ -13,7 +13,7 @@ const observer = new IntersectionObserver(
     });
   },
   {
-    threshold: 0.7,
+    threshold: 0.51,
   }
 );
 
