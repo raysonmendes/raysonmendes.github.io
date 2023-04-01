@@ -398,6 +398,7 @@ a > section {
   }
   header p {
     display: flex;
+    font-size: 2rem;
   }
   .btnMenu {
     display: flex;
@@ -448,6 +449,7 @@ a > section {
   #divProjetos,
   #divContato {
     min-height: 98vh;
+    padding-block: 60px;
   }
   #aGithub:hover,
   #aLinkedin:hover,
@@ -460,7 +462,7 @@ a > section {
   #sectContato {
     gap: 4rem;
 
-    background-color: transparent;
+    background: transparent;
     border-radius: 10px;
     box-shadow: 0px 0px 0.3125rem 0.125rem rgba(47, 50, 55, 0.5);
     backdrop-filter: blur(1rem);
