@@ -174,6 +174,9 @@ label {
   flex-direction: column;
   gap: 18px;
 }
+#sectInicio label {
+  display: none;
+}
 #sectInicio > div {
   flex-direction: column;
   justify-content: center;
@@ -397,8 +400,11 @@ a > section {
     --height-habilidades-projetos: auto;
   }
   header p {
+    width: 76%;
     display: flex;
     font-size: 1.5rem;
+    text-align: center;
+    justify-content: center;
   }
   .btnMenu {
     display: flex;
@@ -407,9 +413,8 @@ a > section {
     position: absolute;
     width: 100%;
     top: 60px;
-    background: rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
+    background: rgba(0, 0, 0, 0.9);
+
     border: rgba(255, 255, 255, 0.1) 2px solid;
     border-radius: 20px;
     box-shadow: 0px 1px 4px rgba(255, 255, 255, 0.1);
@@ -472,6 +477,7 @@ a > section {
   #divInicio {
     align-items: center;
   }
+
   #imgPerfil {
     width: 200px;
     height: 200px;
