@@ -202,6 +202,12 @@ label {
   line-height: 43px;
   color: #f2f2f278;
 }
+.buttonCurriculo {
+  border: 1px #f2f2f278 solid;
+  border-radius: 20px;
+  padding-block: 4px;
+  padding-inline: 8px;
+}
 #linkCurriculo {
   font-family: "Archivo Narrow";
   font-style: normal;
@@ -394,6 +400,21 @@ a > section {
   z-index: 10;
 }
 
+.upButton a {
+  width: 60px;
+  height: 60px;
+  display: block;
+  position: fixed;
+  width: fit-content;
+  padding: 8px;
+  bottom: 5px;
+  right: 5px;
+  background: rgba(242, 242, 242, 0.5);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (max-width: 941px) {
   :root {
     --width-desktop: 95%;
@@ -465,8 +486,6 @@ a > section {
   #sectHabilidadesFuturas,
   #sectProjetos,
   #sectContato {
-    /* gap: 4rem; */
-
     background: transparent;
     border-radius: 10px;
     box-shadow: 0px 0px 0.3125rem 0.125rem rgba(47, 50, 55, 0.5);
@@ -535,5 +554,27 @@ a > section {
   }
   .contato a {
     width: 100%;
+  }
+
+  .upButton a {
+    width: 50px;
+    height: 50px;
+  }
+  .upButton a span {
+    width: 48px;
+    height: 4px;
+    background: #0d0d0d;
+  }
+}
+
+@media (max-width: 364px) {
+  header p {
+    font-size: 1.4rem;
+  }
+  #sectInicio h1 {
+    font-size: 1.7rem;
+  }
+  #cargo {
+    font-size: 1.4rem;
   }
 }
