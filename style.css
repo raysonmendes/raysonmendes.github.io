@@ -465,7 +465,7 @@ a > section {
   #sectHabilidadesFuturas,
   #sectProjetos,
   #sectContato {
-    gap: 4rem;
+    /* gap: 4rem; */
 
     background: transparent;
     border-radius: 10px;
@@ -508,13 +508,14 @@ a > section {
 
   .habilidade,
   .habilidadeFutura {
-    width: 60%;
+    max-width: 48%;
     height: auto;
   }
   .habilidades,
   .habilidadesFuturas {
     flex-wrap: wrap;
-    gap: 1rem;
+    justify-content: space-evenly;
+    gap: 0.5rem;
   }
   .habilidades svg,
   .habilidadesFuturas svg {
