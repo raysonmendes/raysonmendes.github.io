@@ -6,6 +6,7 @@ const observer = new IntersectionObserver(
       if (entry.intersectionRatio >= 0.51) {
         entry.target.classList.add("active");
         enableItemLi("#" + entry.target.parentElement.id);
+        showUpButton();
       } else {
         entry.target.classList.remove("active");
         disableItemLi("#" + entry.target.parentElement.id);
@@ -33,6 +34,16 @@ function disableItemLi(idDiv) {
   });
 }
 
+function showUpButton() {
+  if (document.getElementById("sectInicio").classList.contains("active")) {
+    // document.querySelector(".upButton").style.display = "none";
+    document.querySelector(".upButton").classList.remove("onScreen");
+  } else {
+    // document.querySelector(".upButton").style.display = "flex";
+    document.querySelector(".upButton").classList.add("onScreen");
+  }
+}
+
 onload = function () {
   Array.from(document.querySelectorAll(".section")).forEach((element) => {
     observer.observe(element);
@@ -42,24 +53,19 @@ onload = function () {
 function addTextHeader(idElement) {
   if (idElement == "#divInicio") {
     document.getElementById("textHeaderMobile").innerText = "Inicio";
-    console.log("Inicio");
   }
   if (idElement == "#divHabilidades") {
     document.getElementById("textHeaderMobile").innerText = "Habilidades";
-    console.log("Habilidades");
   }
   if (idElement == "#divHabilidadesFuturas") {
     document.getElementById("textHeaderMobile").innerText =
       "Habilidades Futuras";
-    console.log("Habilidades Futuras");
   }
   if (idElement == "#divProjetos") {
     document.getElementById("textHeaderMobile").innerText = "Projetos";
-    console.log("Projetos");
   }
   if (idElement == "#divContato") {
     document.getElementById("textHeaderMobile").innerText = "Contato";
-    console.log("Contato");
   }
 }
 function removeTextHeader() {

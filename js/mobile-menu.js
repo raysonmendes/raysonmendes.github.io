@@ -7,3 +7,10 @@ function btnMenuClick() {
     document.querySelector(".mainNav").classList.add("active");
   }
 }
+// function closeMobileMenu() {
+//   if (window.screen.width < 941) {
+//     console.log("Acho que vai");
+//   } else {
+//     console.log(window.screen.width);
+//   }
+// }
